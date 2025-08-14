@@ -19,16 +19,23 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: npm
-      - run: npm ci
+
+      # Key change: omit optional deps to avoid platform-specific rollup/esbuild binaries
+      - run: npm ci --omit=optional
+        env:
+          NPM_CONFIG_OPTIONAL: "false"
+
       - run: npm run build
-      - run: shopt -s globstar && cp dist/index.html dist/404.html
+      - run: cp dist/index.html dist/404.html
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
