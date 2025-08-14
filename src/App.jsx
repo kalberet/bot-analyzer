@@ -22,7 +22,9 @@ const App = () => {
     hasWeaponColumns,
     weaponTypeOptions,
     downloadFilteredAsCSV,
-    downloadSample
+    downloadSample,
+    loadSampleIntoApp,
+    lastLoadInfo,
   } = useCSVData();
 
   const [activeTab, setActiveTab] = useState('home');
@@ -42,7 +44,7 @@ const App = () => {
     return src;
   }, [bots, hasWeaponColumns, selectedWeaponType, minFights]);
 
-  // E-Rank scoring honors toggle
+  // E-Rank scoring respects the control KO% toggle
   const effectivenessRanked = useMemo(() => {
     const scored = filteredBots.map((b) => ({
       ...b,
@@ -150,17 +152,6 @@ const App = () => {
               </label>
             </div>
           </div>
-
-          {pinnedBot && (
-            <div className="max-w-7xl mx-auto px-6">
-              <div className="pinned-banner mt-3">
-                <div>
-                  Pinned: <strong>{pinnedBot.name}</strong> • Rank #{pinnedBot.rank}{pinnedBot.points != null ? ` • Points ${pinnedBot.points}` : ''} • WR {pinnedBot.winrate?.toFixed(1)}% • KO {pinnedBot.koWinrate?.toFixed(1)}%
-                </div>
-                <button onClick={() => setPinnedBot(null)} className="btn-clear">Clear pin</button>
-              </div>
-            </div>
-          )}
         </div>
       </header>
 
@@ -190,7 +181,14 @@ const App = () => {
 
       <main className="max-w-7xl mx-auto px-6 py-8">
         {activeTab === 'home' && (
-          <Home uploadCSV={uploadCSV} loading={loading} onDownloadSample={downloadSample} />
+          <Home
+            uploadCSV={uploadCSV}
+            loading={loading}
+            onDownloadSample={downloadSample}
+            onLoadSampleIntoApp={loadSampleIntoApp}
+            lastLoadInfo={lastLoadInfo}
+            onNavigate={(tab) => setActiveTab(tab)}
+          />
         )}
 
         {activeTab === 'overview' && (
@@ -261,7 +259,7 @@ const App = () => {
               </p>
             </div>
             <div className="pt-3 border-t text-xs text-gray-500">
-              Independent tool. Not affiliated with NHRL. CSV data is not modified. E-Rank is analytical.
+              Independent tool. Not affiliated with NHRL. CSV data is not modified. E‑Rank is analytical.
             </div>
           </div>
         </div>

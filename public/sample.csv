@@ -1,0 +1,101 @@
+Rank,Rank Change,Bot,Events,Fights,W,L,%,Points,KOs,KO'd,WeaponType,WeaponType-specific
+1,-,Mako,9,40,30,10,0.75,21.43,15,2,Overhead,Saw
+2,-,TurboFIEND,8,37,29,8,0.784,20.6,15,3,Vertical,Disk
+3,>3,Repeater,5,27,22,5,0.815,19.65,17,2,Vertical,BeaterSq
+4,-,Caldera,8,37,27,10,0.73,17.9,15,5,Horizontal,Bar
+5,>10,Jelly Baby,5,28,22,6,0.786,17.69,7,0,Control,Lifter
+6,<3,Eruption,4,23,19,4,0.826,17.48,10,4,Vertical,BeaterSq
+7,-,Knuckle Sandwich,5,25,21,4,0.84,17.43,11,3,Vertical,BeaterSq
+8,<3,IMPAKT,6,29,22,7,0.759,15.19,14,3,Vertical,BeaterSq
+9,>9,Vapor Trail,4,21,17,4,0.81,13.4,4,2,Vertical,Disk
+10,<2,Chainsaw Kitty,4,19,15,4,0.789,12.2,12,3,Vertical,AsymmetricBar
+11,-,Basics,5,22,17,5,0.773,12.05,9,4,Vertical,Drum
+12,<3,War? Hard!,3,13,11,2,0.846,11.8,9,1,Vertical,BeaterSq
+13,<3,Silent Spring,3,20,16,4,0.8,11.59,8,3,Horizontal,UndercutterDisk
+14,<2,Comet,6,27,19,8,0.704,11.21,8,2,Vertical,AsymmetricBar
+15,<2,Clyde,3,15,12,3,0.8,10.01,7,0,Control,Flamethrower
+16,<2,Scurryfest,2,11,10,1,0.909,9.82,3,0,Horizontal,UndercutterBar
+17,<1,Red Panda,5,25,17,8,0.68,9.39,9,5,Vertical,Drisk
+18,>1,Bean Supreme: Refried,4,17,12,5,0.706,7.66,4,0,Control,Lifter
+19,<2,THE WALL PT2,3,15,11,4,0.733,7.64,4,3,Overhead,Hammersaw
+20,>9,Pinevictus,3,12,8,4,0.667,7.11,7,1,Vertical,BeaterSq
+21,>14,Sting Operation,4,17,12,5,0.706,6.88,9,2,Overhead,Hammersaw
+22,>26,The Power of Friendship!,4,17,12,5,0.706,6.86,2,1,Overhead,Drill
+23,<3,The Throngler,4,17,12,5,0.706,6.79,6,0,Horizontal,Bar
+24,<3,Drumder Child,4,17,12,5,0.706,6.72,6,2,Vertical,Drum
+25,<3,Crush,3,13,10,3,0.769,6.67,7,3,Vertical,Drisk
+26,<3,Prince,5,19,13,6,0.684,6.4,7,5,Vertical,Bar
+27,>123,ColdSnap,2,11,9,2,0.818,6.39,9,1,Horizontal,UndercutterBar
+28,>10,Sir Slicey,3,14,10,4,0.714,6.34,9,2,Vertical,Drisk
+29,<5,Count3rPunch,1,9,7,2,0.778,6.21,2,2,Vertical,AsymmetricBar
+30,<5,Little Bob,5,23,15,8,0.652,6.18,7,5,Vertical,Beater
+31,<4,Spartan,2,9,7,2,0.778,6.15,4,0,Horizontal,Bar
+32,<4,Voxel v;1,3,12,9,3,0.75,5.83,4,1,Vertical,Drum
+33,<3,Radix,3,11,8,3,0.727,5.69,4,1,Horizontal,UndercutterBar
+34,<8,Dimachaerus,5,22,14,8,0.636,5.57,8,3,Vertical,Drisk
+35,>142,Sad Octopus,4,16,10,6,0.625,5.4,6,2,Vertical,Drisk
+36,<5,Sir Spinny,4,16,11,5,0.688,5.29,5,3,Vertical,Beater
+37,>4,Sea Dragon's Roar,5,17,11,6,0.647,5.15,5,1,Vertical,Disk
+38,<6,Twisted Sister,1,8,6,2,0.75,5.1,1,0,Horizontal,Bar
+39,-,Jackalope,4,17,10,7,0.588,5.07,6,4,Vertical,Disk
+40,<7,usawgi,2,11,8,3,0.727,5.05,4,0,Overhead,Hammersaw
+41,<7,Strikepoint,1,7,6,1,0.857,4.99,2,0,Overhead,Hammersaw
+42,<6,Scab Armour,3,13,8,5,0.615,4.82,3,2,Vertical,Beater
+43,<6,Rhino,4,16,10,6,0.625,4.75,4,5,Vertical,AsymmetricBar
+44,<4,Poly whiip,2,8,6,2,0.75,4.25,2,1,Vertical,Beater
+45,<3,Blunder,2,12,8,4,0.667,4.08,3,2,Vertical,BeaterSq
+46,<3,Monkfish,2,10,7,3,0.7,4.08,5,0,Horizontal,UndercutterBar
+47,<3,Chippy,2,8,6,2,0.75,4.06,2,0,Overhead,Hammersaw
+48,<3,Loopy,1,6,5,1,0.833,4.06,4,0,Horizontal,Bar
+49,<3,Stag beetle bot,4,18,11,7,0.611,4.02,5,2,Vertical,Drisk
+50,<3,Mr. Scrubbles,2,8,6,2,0.75,4,3,1,Vertical,Beater
+51,<2,Turbofriend,2,8,6,2,0.75,3.69,0,0,Control,Lifter
+52,<2,Supreme Ruler,2,9,6,3,0.667,3.49,2,0,Control,CamLifter
+53,<2,IDKWTFID,2,9,6,3,0.667,3.29,5,3,Vertical,Drisk
+54,<2,Reign-X,2,9,6,3,0.667,3.2,4,2,Vertical,AsymmetricBar
+55,>25,Blindside,5,19,11,8,0.579,3.16,8,4,Vertical,BeaterSq
+56,<3,Peekaboo,2,9,6,3,0.667,3.07,3,1,Control,Lifter
+57,!,Mondo Bizarro,1,7,5,2,0.714,3.01,4,0,Vertical,BeaterSq
+58,<4,Hurt Caboose,2,11,7,4,0.636,2.94,3,0,Vertical,Drum
+59,<4,Dollar Store Punch,1,7,5,2,0.714,2.94,4,2,Vertical,Disk
+60,<4,Money Shot,5,18,10,8,0.556,2.82,4,2,Vertical,AsymmetricBar
+61,>28,MCB - Master Control Bot,6,20,11,9,0.55,2.82,6,2,Control,Lifter
+62,<5,Tokyo Drisk,3,13,8,5,0.615,2.81,7,0,Vertical,Drisk
+63,<5,PRAMH3DA,2,8,5,3,0.625,2.8,5,0,Vertical,Disk
+64,<5,Liberation,2,9,6,3,0.667,2.76,3,3,Vertical,Drisk
+65,<5,Count Forkula,3,11,7,4,0.636,2.75,0,1,Control,Lifter
+66,>28,Red Flag,4,13,8,5,0.615,2.67,4,4,Vertical,BeaterSq
+67,<6,Jack Ketch,1,4,3,1,0.75,2.65,2,1,Vertical,Beater
+68,<5,BeetleJuice,2,11,7,4,0.636,2.56,5,2,Horizontal,Bar
+69,<5,Fe Fan,2,9,5,4,0.556,2.51,0,2,Vertical,Beater
+70,<5,Fully Defined,2,8,5,3,0.625,2.5,3,3,Vertical,Disk
+71,<5,The Greatest Challenge,2,8,5,3,0.625,2.5,1,2,Horizontal,Meltybrain
+72,<5,K.I.W.F (Kill It With Fire!),2,8,5,3,0.625,2.47,0,2,Overhead,Torch
+73,<5,HODOR,3,13,8,5,0.615,2.45,3,0,Control,Lifter
+74,<5,Catalyst,2,8,5,3,0.625,2.44,5,3,Vertical,AsymmetricBar
+75,<5,Hyperdrive,2,8,5,3,0.625,2.4,4,1,Vertical,Bar
+76,<5,Morning Shot,2,10,6,4,0.6,2.37,3,3,Vertical,Beater
+77,<5,Taurine,2,10,6,4,0.6,2.3,4,2,Horizontal,UndercutterBar
+78,<5,KaZaA,1,4,3,1,0.75,2.29,0,1,Control,Flamethrower
+79,<5,Juggernaut,1,6,4,2,0.667,2.28,0,0,Vertical,Drisk
+80,<5,Jade Komodo,2,7,4,3,0.571,2.27,1,1,Control,Lifter
+81,<5,Endpoint,1,6,5,1,0.833,2.24,0,0,Overhead,Hammersaw
+82,<5,Chubby Unicorn,2,8,5,3,0.625,2.21,3,1,Vertical,Drisk
+83,<5,Wicked Wedge,1,4,3,1,0.75,2.21,2,0,Control,Lifter
+84,<5,Kamino,1,4,3,1,0.75,2.16,2,0,Vertical,BeaterSq
+85,<4,Knife Fight,1,6,4,2,0.667,2.15,0,0,Control,Lifter
+86,<4,Power Surge III,2,8,5,3,0.625,2.14,3,1,Vertical,BeaterSq
+87,<4,Sliced Bread,4,16,9,7,0.563,2.1,4,4,Vertical,BeaterSq
+88,<3,Winks,1,7,5,2,0.714,2.03,5,1,Vertical,BeaterSq
+89,<3,name TBD,1,4,3,1,0.75,2.01,0,0,Control,Lifter
+90,<3,Division V4,2,8,5,3,0.625,2,4,1,Vertical,AsymmetricBar
+91,<3,Redline,2,7,5,2,0.714,1.89,1,2,Vertical,Drisk
+92,<2,Instant Regret,2,7,4,3,0.571,1.81,2,1,Vertical,Beater
+93,<2,Scottie's Scrambler,3,12,6,6,0.5,1.8,2,3,Vertical,Beater
+94,<10,Bagheera,4,19,11,8,0.579,1.79,7,5,Vertical,Disk
+95,<3,YEETUS,3,13,7,6,0.538,1.78,5,4,Horizontal,Disk
+96,<3,Adrift,1,4,3,1,0.75,1.75,3,1,Horizontal,Bar
+97,>28,Under Destruction,3,11,6,5,0.545,1.72,1,1,Control,Lifter
+98,<3,Misdirected Aggression,2,7,5,2,0.714,1.71,3,1,Horizontal,Bar
+99,<3,Anubis,5,19,10,9,0.526,1.68,5,6,Vertical,BeaterSq
+100,<3,Krikit,1,5,3,2,0.6,1.67,0,1,Horizontal,OverheadBar
