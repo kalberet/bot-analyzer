@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  --up: #16a34a;
+  --down: #dc2626;
+  --new: #7c3aed;
+  --same: #6b7280;
+  --chip-bg: #f3f4f6;
+}
+
+.chip {
+  display: inline-block;
+  font-size: 10px;
+  line-height: 1;
+  padding: 2px 6px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: var(--chip-bg);
+  vertical-align: middle;
+}
+.chip-up { color: var(--up); border-color: rgba(22,163,74,.25); background: rgba(22,163,74,.06); }
+.chip-down { color: var(--down); border-color: rgba(220,38,38,.25); background: rgba(220,38,38,.06); }
+.chip-new { color: var(--new); border-color: rgba(124,58,237,.25); background: rgba(124,58,237,.06); }
+.chip-same { color: var(--same); border-color: rgba(107,114,128,.25); background: rgba(107,114,128,.06); }
+
+.confidence {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.confidence-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #93c5fd, #22c55e);
+}
+
+.legend-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  margin-right: 6px;
+}
+
+.pinned-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-size: 13px;
+}
+.btn-clear {
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: white;
+  cursor: pointer;
+}
+.btn-clear:hover { background: #f3f4f6; }
+
+.btn-pin {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  padding: 2px 6px;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+.btn-pin:hover { background: #f9fafb; }
+
+/* Modal metric cards */
+.metric-card { border-radius: 8px; padding: 10px; }
+.metric-card .metric-label { font-size: 11px; font-weight: 600; opacity: 0.8; margin-bottom: 4px; }
+.metric-card .metric-value { font-size: 20px; font-weight: 800; }
+.metric-card.blue { background: linear-gradient(135deg, #eff6ff, #dbeafe); color: #1e40af; }
+.metric-card.purple { background: linear-gradient(135deg, #f5f3ff, #ede9fe); color: #5b21b6; }
+.metric-card.green { background: linear-gradient(135deg, #ecfdf5, #d1fae5); color: #065f46; }
+.metric-card.red { background: linear-gradient(135deg, #fef2f2, #fee2e2); color: #991b1b; }
