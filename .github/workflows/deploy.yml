@@ -25,40 +25,12 @@ jobs:
           node-version: 20
           cache: npm
 
-      # Patch package-lock.json to drop mac-only Rollup entries so Linux install won't choke
-      - name: Patch package-lock for Linux
-        run: |
-          node - <<'NODE'
-          const fs = require('fs');
-          const p = 'package-lock.json';
-          if (!fs.existsSync(p)) process.exit(0);
-          const lock = JSON.parse(fs.readFileSync(p,'utf8'));
+      # Remove mac-generated lockfile so Linux can resolve platform deps correctly
+      - run: rm -f package-lock.json
 
-          // Helper to recursively delete any keys that match a predicate
-          const prune = (obj) => {
-            if (!obj || typeof obj !== 'object') return;
-            for (const k of Object.keys(obj)) {
-              if (typeof obj[k] === 'object' && obj[k] !== null) prune(obj[k]);
-              // Remove any darwin-only Rollup platform packages
-              if (k.includes('@rollup/rollup-darwin')) delete obj[k];
-              // (Optional) If your lock ever contains esbuild darwin blobs too:
-              if (k.includes('@esbuild/darwin')) delete obj[k];
-            }
-          };
-
-          // npm lockfile v3 layout: { packages: {...}, dependencies: {...} }
-          if (lock.packages) prune(lock.packages);
-          if (lock.dependencies && lock.dependencies['@rollup/rollup-darwin-arm64']) {
-            delete lock.dependencies['@rollup/rollup-darwin-arm64'];
-          }
-
-          fs.writeFileSync(p, JSON.stringify(lock, null, 2));
-          console.log('Patched package-lock.json to remove darwin-only Rollup entries.');
-          NODE
-
-      # Use latest npm and install without optional deps
+      # Use latest npm and install without optional deps (skips platform-specific binaries)
       - run: npm i -g npm@latest
-      - run: npm ci --omit=optional || npm install --omit=optional
+      - run: npm install --omit=optional
         env:
           NPM_CONFIG_OPTIONAL: "false"
 
