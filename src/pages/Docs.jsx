@@ -122,15 +122,6 @@ const Docs = () => {
             Gallery density: Comfortable/Cozy/Compact.
           </li>
         </ul>
-        <Code>{`// In utils/effectivenessScore:
-export const effectivenessScore = (b, { includeControlKO = false, wrWeight = 0.7, koWeight = 0.3 } = {}) => {
-  const wr = Number(b.winrateNorm || 0);
-  const ko = Number(b.koWinrateNorm || 0);
-  const controlNoFlame = b.category === 'control' && !isFlamethrower(b);
-  const wWR = (controlNoFlame && !includeControlKO) ? 1 : wrWeight;
-  const wKO = (controlNoFlame && !includeControlKO) ? 0 : koWeight;
-  return wr * wWR + ko * wKO;
-};`}</Code>
       </Section>
 
       <Section icon={AlertTriangle} title="Troubleshooting and solutions">
